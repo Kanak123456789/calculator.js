@@ -13,19 +13,19 @@
 });
 
 equal.addEventListener('click',function(e) {
-    if(screen.value === ''){
-        screen.value = "Please Enter Inputs";
+    if(scr.value === ''){
+        scr.value = "Please Enter Inputs";
     }
     else{
         equal.addEventListener('click', function(e) {
-            let answer = eval(screen.value);
-            screen.value = answer;
+            let answer = eval(scr.value);
+            scr.value = answer;
         });
     }
 })
 
 clear.addEventListener('click', function(e){
-    screen.value = "";
+    scr.value = "";
 })
 
 
